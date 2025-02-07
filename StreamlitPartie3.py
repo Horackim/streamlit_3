@@ -33,9 +33,10 @@ authenticator = Authenticate(
     30, # Le nombre de jours avant que le cookie expire 
 )
 
+st.write("login : julien")
+st.write("mdp : julienMDP")
+
 authenticator.login()
-
-
 def accueil():
     st.title("Bienvenu sur la page de Julien")
     st.image("https://raw.githubusercontent.com/Horackim/streamlit_3/594282bff286474785b163150c738281eab58b2e/familyguy.jpg")
