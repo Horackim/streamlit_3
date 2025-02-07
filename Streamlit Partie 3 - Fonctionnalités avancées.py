@@ -40,7 +40,7 @@ authenticator.login()
 
 def accueil():
     st.title("Bienvenu sur la page de Julien")
-    st.image(r"C:\Users\julie\OneDrive\sources\repos\Wilder_Data_Analyst\Collabs\Streamlit\familyguy.jpg")
+    st.image("https://github.com/Horackim/streamlit_3/blob/594282bff286474785b163150c738281eab58b2e/familyguy.jpg")
 
 def album():
     st.title("Bienvenue sur mon album photo")
@@ -72,9 +72,3 @@ elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
 elif st.session_state["authentication_status"] is None:
     st.warning('Les champs username et mot de passe doivent être remplie')
-
-
-
-
-
-
