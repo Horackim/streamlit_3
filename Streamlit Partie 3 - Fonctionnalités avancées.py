@@ -1,6 +1,4 @@
 import streamlit as st
-import seaborn as sns
-import matplotlib.pyplot as plt
 from streamlit_authenticator import Authenticate
 from streamlit_option_menu import option_menu
 
@@ -40,7 +38,7 @@ authenticator.login()
 
 def accueil():
     st.title("Bienvenu sur la page de Julien")
-    st.image("https://github.com/Horackim/streamlit_3/blob/594282bff286474785b163150c738281eab58b2e/familyguy.jpg")
+    st.image("https://raw.githubusercontent.com/Horackim/streamlit_3/594282bff286474785b163150c738281eab58b2e/familyguy.jpg")
 
 def album():
     st.title("Bienvenue sur mon album photo")
