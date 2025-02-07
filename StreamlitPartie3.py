@@ -32,11 +32,6 @@ authenticator = Authenticate(
     "kikoololasv", # La clé du cookie, un str quelconque
     30, # Le nombre de jours avant que le cookie expire 
 )
-
-st.write("login : julien")
-st.write("mdp : julienMDP")
-
-authenticator.login()
 def accueil():
     st.title("Bienvenu sur la page de Julien")
     st.image("https://raw.githubusercontent.com/Horackim/streamlit_3/594282bff286474785b163150c738281eab58b2e/familyguy.jpg")
@@ -54,6 +49,7 @@ def album():
         st.header("An owl")
         st.image("https://static.streamlit.io/examples/owl.jpg")
 
+authenticator.login()
 
 if st.session_state["authentication_status"]:
     with st.sidebar:
@@ -71,3 +67,5 @@ elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
 elif st.session_state["authentication_status"] is None:
     st.warning('Les champs username et mot de passe doivent être remplie')
+    st.write("login : julien")
+    st.write("mdp : julienMDP")
